@@ -23,7 +23,7 @@ class LoginForm extends Component {
     }
 
     renderError() {
-        if (this.props.error.length > 1) {
+        if (this.props.error) {
             console.log(this.props.error);
             return (
                 <View style={{ backgroundColor: 'white' }}>
