@@ -4,8 +4,7 @@ import LoginForm from './components/LoginForm';
 import EmployeeList from './components/EmployeeList';
 import EmployeeCreate from './components/EmployeeCreate';
 
-const RouterComponent = () => {
-    return (
+const RouterComponent = () => (
         <Router>
             <Scene key='root' hideNavBar>
                 <Scene key='auth'>
@@ -19,7 +18,7 @@ const RouterComponent = () => {
                 <Scene key='main'>
                     <Scene
                       rightTitle='Add'
-                      onRight={() => { Actions.employeeCreate() }}
+                      onRight={() => { Actions.employeeCreate(); }}
                       key='employeeList'
                       component={EmployeeList}
                       title='Employees'
@@ -34,6 +33,5 @@ const RouterComponent = () => {
             </Scene>
         </Router>
     );
-};
 
 export default RouterComponent;
