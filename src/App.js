@@ -5,7 +5,8 @@ import ReduxThunk from 'redux-thunk';
 import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers';
 import Router from './Router';
-// import LoginForm from './components/LoginForm'
+
+// const env = require('dotenv').config();
 
 export default class App extends Component {
     componentWillMount() {
